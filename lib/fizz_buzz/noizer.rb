@@ -8,6 +8,11 @@ class Noizer
     show_message? ? @message : ""
   end
 
+  def message_for number
+    @number = number
+    message
+  end
+
   def show_message?
     rule.call @number
   end

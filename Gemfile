@@ -1,3 +1,4 @@
-source :rubygems
+source "http://rubygems.org"
 
-gem 'rspec'
+# Specify your gem's dependencies in fizz_buzz.gemspec
+gemspec
