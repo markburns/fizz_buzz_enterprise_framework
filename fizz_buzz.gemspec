@@ -7,10 +7,10 @@ Gem::Specification.new do |s|
   s.version     = FizzBuzz::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Mark Burns"]
-  s.email       = ["TODO: Write your email address"]
+  s.email       = ["markthedeveloper@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Really solving the FizzBuzz problem}
+  s.description = %q{}
 
   s.rubyforge_project = "fizz_buzz"
 
