@@ -14,6 +14,6 @@ describe NoizePrinter do
       Kernel.should_receive(:puts).with("#{i+1}: #{fizz}#{buzz}")
 
     end
-    NoizePrinter.new 15
+    NoizePrinter.new 150
   end
 end
