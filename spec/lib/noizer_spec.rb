@@ -18,8 +18,12 @@ describe Noizer do
     @noizer.rule.should == rule
   end
 
-  it "has a display message" do
-    @noizer = Noizer.new 10, lambda{true}, "Fizz"
+  it "has a display message dependent on the rule" do
+    @noizer = Noizer.new 10, lambda{|n| false}, "Fizz"
+    @noizer.message.should == ""
+
+    @noizer = Noizer.new 10, lambda{|n| true}, "Fizz"
     @noizer.message.should == "Fizz"
+
   end
 end

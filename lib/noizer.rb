@@ -4,6 +4,10 @@ class Noizer
     @number, @rule, @message = number, rule, message
   end
 
+  def message
+    show_message? ? @message : ""
+  end
+
   def show_message?
     rule.call @number
   end
