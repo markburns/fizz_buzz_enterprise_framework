@@ -26,4 +26,11 @@ describe FizzBuzz::Noizer do
     @noizer.message.should == "Fizz"
 
   end
+
+  it "shows a message for any number" do
+    @buzzer = FizzBuzz::Noizer.new 10, lambda{|n| n==3}, "Noize"
+
+    @buzzer.message_for(3).should == "Noize"
+    @buzzer.message_for(5).should == ""
+  end
 end
