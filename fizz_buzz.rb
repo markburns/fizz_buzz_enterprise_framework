@@ -3,8 +3,9 @@
 (1..100.to_i).each do |i|
   fizz = i % 5 == 0
   buzz = i % 3 == 0
-  message = "#{i}: "
-  message << "Fizz" if fizz
-  message << "Buzz" if buzz
+  message = "#{i}: ".tap do |m|
+    m << "Fizz" if fizz
+    m << "Buzz" if buzz
+  end
   puts message
 end
