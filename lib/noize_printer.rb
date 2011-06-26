@@ -6,12 +6,12 @@ class NoizePrinter
       fizz_rule = lambda{|number| number % 5 == 0}
       buzz_rule = lambda{|number| number % 3 == 0}
 
-      fizzer = Noizer.new i, fizz_rule
-      buzzer = Noizer.new i, buzz_rule
+      fizzer = Noizer.new i, fizz_rule, "Fizz"
+      buzzer = Noizer.new i, buzz_rule, "Buzz"
 
       Kernel.puts("#{i}: ".tap do |m|
-        m << "Fizz" if fizzer.show_message?
-        m << "Buzz" if buzzer.show_message?
+        m << fizzer.message if fizzer.show_message?
+        m << buzzer.message if buzzer.show_message?
       end)
     end
   end

@@ -1,7 +1,7 @@
 class Noizer
-  attr_accessor :number, :rule
-  def initialize number, rule
-    @number, @rule = number, rule
+  attr_accessor :number, :rule, :message
+  def initialize number, rule, message
+    @number, @rule, @message = number, rule, message
   end
 
   def show_message?
