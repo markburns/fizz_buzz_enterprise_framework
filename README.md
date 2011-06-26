@@ -29,7 +29,7 @@ it can quickly become unreadable, unmaintainable and a spaghetti
 nightmare.
 
 The solution is very closely coupled to the problem, and doesn't allow for
-a Business Manager or Client Liason team to ammend the parameters of the
+a Business Manager or Client Liason team to amend the parameters of the
 problem and solution.
 
 The aim of the FizzBuzz Enterprise Framework is to allow this solution to
