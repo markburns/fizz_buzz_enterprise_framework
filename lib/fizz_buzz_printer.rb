@@ -4,14 +4,15 @@ require './lib/buzzer'
 class FizzBuzzPrinter
   def initialize max_value
     (1..max_value).each do |i|
-      fizzer = Fizzer.new i
-      buzzer = Buzzer.new i
-      fizz = fizzer.number % 5 == 0
-      buzz = buzzer.number % 3 == 0
+      fizz_rule = lambda{|number| number % 5 == 0}
+      buzz_rule = lambda{|number| number % 3 == 0}
+
+      fizzer = Fizzer.new i, fizz_rule
+      buzzer = Buzzer.new i, buzz_rule
 
       puts("#{i}: ".tap do |m|
-        m << "Fizz" if fizz
-        m << "Buzz" if buzz
+        m << "Fizz" if fizzer.show_message?
+        m << "Buzz" if buzzer.show_message?
       end)
     end
   end
