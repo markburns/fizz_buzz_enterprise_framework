@@ -7,7 +7,7 @@ describe NoizePrinter do
   end
 
   it "prints out fizz buzz" do
-    15.times do |i|
+    150.times do |i|
 
       fizz = (i+1) % 5 == 0 ? "Fizz" : ""
       buzz = (i+1) % 3 == 0 ? "Buzz" : ""
