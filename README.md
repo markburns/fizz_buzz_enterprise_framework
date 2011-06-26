@@ -6,8 +6,9 @@ is the FizzBuzz problem.
 
 Simply stated it is this:
 
-Display a list of integers, if the number can be divided by 5 print out
-"Fizz". If it can be divided by 3 print out "Buzz"
+  Display a list of integers, if the number can be divided by 5 print out
+  "Fizz". If it can be divided by 3 print out "Buzz". If it can be divided
+  by both then print out "FizzBuzz"
 
 A beginner programmer's naive solution to the problem might be something like
 the following:
@@ -27,8 +28,31 @@ This solution may look clean and readable, but given changing requirements
 it can quickly become unreadable, unmaintainable and a spaghetti
 nightmare.
 
+The solution is very closely coupled to the problem, and doesn't allow for
+a Business Manager or Client Liason team to ammend the parameters of the
+problem and solution.
+
 The aim of the FizzBuzz Enterprise Framework is to allow this solution to
 expand with the scope of the problem.
 
-TODO: Split Fizzer and Buzzer into separate RESTful services to build a scalable
+TODO:
+____
+* Split logic into MVC for proper separation of concerns and modularity
 
+* Write a simple DSL to alter parameters of FizzBuzz algorithm
+
+* Split Fizzer and Buzzer into separate RESTful services to build a scalable
+Service Oriented Architecture application.
+
+* Write a custom XML Parser
+
+* Allow implementation of the algorithm to be configured using XML files or the
+proprietery simple DSL
+
+* Ammend view layer to support custom configuration of presentation using XML
+
+* Admin interface for the presentation layer configuration data
+
+* Admin interface to handle changes to the Admin interface
+
+* Easy to use .Net, PHP and Java client libraries
