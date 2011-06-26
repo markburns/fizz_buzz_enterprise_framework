@@ -1,4 +1,4 @@
-require './lib/noizer'
+require './lib/fizz_buzz/noizer'
 module FizzBuzz
   class Fizzer < Noizer
     def initialize number=1, rule=lambda{|n|n %5==0}, message="Fizz"

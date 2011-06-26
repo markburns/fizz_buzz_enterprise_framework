@@ -1,4 +1,4 @@
-require './lib/main'
+require './lib/fizz_buzz/main'
 usage = <<EOF
   Usage:
 

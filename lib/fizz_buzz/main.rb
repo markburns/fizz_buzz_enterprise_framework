@@ -1,7 +1,7 @@
-require './lib/noize_printer'
+require './lib/fizz_buzz/noize_printer'
 class Main
   def self.run! max
-    NoizePrinter.new max
+    FizzBuzz::NoizePrinter.new max
   end
 end
 
