@@ -35,6 +35,25 @@ problem and solution.
 The aim of the FizzBuzz Enterprise Framework is to allow this solution to
 expand with the scope of the problem.
 
+Wouldn't it be nice if we could just write the following instead:
+
+```ruby
+require 'fizz_buzz'
+
+FizzBuzz.run! 100
+```
+
+Or connect to
+
+http://fizzbuzz.example.com/fizz/5.xml
+to get back
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<IsFizz>true</IsFizz>
+<Message>Fizz</message>
+```
+
 TODO:
 ____
 * Split logic into MVC for proper separation of concerns and modularity
