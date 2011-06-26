@@ -9,7 +9,7 @@ class NoizePrinter
       fizzer = Noizer.new i, fizz_rule
       buzzer = Noizer.new i, buzz_rule
 
-      puts("#{i}: ".tap do |m|
+      Kernel.puts("#{i}: ".tap do |m|
         m << "Fizz" if fizzer.show_message?
         m << "Buzz" if buzzer.show_message?
       end)
