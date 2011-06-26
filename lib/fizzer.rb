@@ -1,8 +1,5 @@
-class Fizzer
-  attr_accessor :number
-  def initialize number
-    @number = number
-  end
+require './lib/noizer'
+class Fizzer < Noizer
 end
 
 
